@@ -91,41 +91,6 @@
     transition: transform 0.5s;
 }
 
-.product_card:hover {
-    transform: scale(1.1);
-    transition: all 0.3s ;
-    transition: transform 0.5s;
-}
-
-.product_card {
-    text-align: center;
-    width: 360px;
-    height: 410px;
-    background-color: #82D2FF;
-    border-radius: 30px;
-    border:2px solid black ;
-    margin-top: 33px;
-    
-    h2 {
-        font-size: 26px;
-        font-weight: normal;
-        padding-bottom: 10px;
-        padding-top: 10px;
-    }
-    p {
-        font-size: 16px;
-        padding-bottom: 20px;
-    }
-    h3 {
-        font-size: 26px;
-        padding-bottom: 20px;
-    }
-    img {
-        border: 1px solid black;
-        border-radius: 40px;
-        margin-top: 20px;
-    }
-}
 
 .cart {
     position: absolute;
