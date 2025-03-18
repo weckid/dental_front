@@ -1,0 +1,101 @@
+.swiper {
+    width: 1300px;
+    height: 800px;
+    margin: 0;
+    border-radius: 30px;
+    margin-top: 80px;
+  }
+  
+  
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .swiper-slide {
+    z-index: 1;
+    .swiper_content {
+       color: #fff;
+       background-color: rgba(130, 210, 255, 0.7);
+       border-radius: 0px 20px 20px 0px;
+       position: absolute;
+       top: 440px;
+       width: 80%;
+       height: 35%;
+       display: flex; /* Добавляем flexbox */
+       flex-direction: column; /* Располагаем контент по вертикали */
+       justify-content: center; /* Центрируем контент по вертикали */
+    }
+    .swiper_content {
+        font-size: 24px;
+        padding-left: 52px;
+        h2 {
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }
+    }
+  }
+  .swiper-slide img {
+    width: 100%;
+    height: 800px;
+    z-index: -1;
+    transition: all 0.4s ease;
+    position: absolute;
+  }
+  @media (max-width: 768px) {
+    .swiper {
+     width: 100%; /* Занимает всю ширину экрана */
+     height: 400px; /* Изменяем высоту слайдера */
+     border-radius: 20px; /* Уменьшаем радиус закругления */
+     margin-top: 40px; /* Уменьшаем отступ сверху */
+    }
+   
+    .swiper-slide img {
+     height: 400px; /* Изменяем высоту изображения */
+    }
+   
+    .swiper_content {
+      z-index: 2;
+     top: 220px; /* Изменяем позицию контента */
+     width: 90%; /* Увеличиваем ширину контента */
+     height: 25%; /* Изменяем высоту контента */
+     padding: 15px; /* Изменяем padding для `.swiper_content` */
+    }
+    
+    .swiper_content h2 {
+      font-size: 1.2em; /* Уменьшаем размер шрифта для h2 */
+     }
+    
+     .swiper_content h2 {
+      font-size: 1.2em; /* Уменьшаем размер шрифта для h2 */
+     }
+    
+     .swiper_content p {
+      font-size: 14px; /* Уменьшаем размер шрифта для p */
+     }
+   }
+   
+   @media (max-width: 414px) {
+    .swiper {
+     height: 300px; /* Еще уменьшаем высоту слайдера */
+    }
+   
+    .swiper-slide img {
+     height: 300px; /* Изменяем высоту изображения */
+    }
+   
+    .swiper_content {
+     top: 150px; /* Изменяем позицию контента */
+     height: 20%; /* Уменьшаем высоту контента */
+     font-size: 18px; /* Уменьшаем размер шрифта */
+     padding: 10px; /* Изменяем padding для `.swiper_content` */
+    }
+    .swiper_content h2 {
+      font-size: 1em; /* Еще уменьшаем размер шрифта для h2 */
+     }
+    
+     .swiper_content p {
+      font-size: 12px; /* Еще уменьшаем размер шрифта для p */
+     }
+   }
+   
